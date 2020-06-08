@@ -12,7 +12,7 @@ func main() {
 	for n:= 0; n <= 10; n++ {
 		switch {
 			case n%2 == 1: 
-				fmt.Println(n, "- Odd number")
+				fmt.Printf("%d - Odd number\n", n)
 			case n%2 == 0: 
 				fmt.Println(n, "- Even number")
 			default: 
