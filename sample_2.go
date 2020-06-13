@@ -55,5 +55,57 @@ func main() {
 	fmt.Println(ns[n:])
 	//get slice of until "m-1"nth 
 	fmt.Println(ns[:m])
+
+
+	/*
+    // zero value is nill
+ 	var m map[string]int
 	
+	//initialization by make
+	m = make(map[string]int)
+	
+	// specify capacity
+	m = make(map[string]int, 10)
+	
+	// initialization by literal
+	m = map[string]int{"x": 10, "y": 20}
+	
+	// case by nil
+	m := map[string]int{}
+ */
+	m := map[string]int{"x": 10, "y": 20}
+		
+	println(m["x"])
+	
+	m["z"] = 30
+	
+	// n = value, ok = True or false
+	n, ok := m["z"]
+	
+	println(n, ok)
+	
+	
+	delete(m, "z")
+	
+	n, ok = m["z"]
+	println(n, ok)
+	
+
+	// type "Type name" "Base type"
+	
+	// based on embedded type
+	type MyInt int
+	
+	// based on type of other package
+	/* type MyWriter io.Writer */
+	
+	// based on type riteral
+	type Person struct {
+		Name string
+	}
+	
+	var n int = 100
+
+	m := MyInt(n)
+	n = int(m)
 }
