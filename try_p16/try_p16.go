@@ -1,10 +1,11 @@
 package main
 import (
 	"fmt"
-	greating "./greeting.go"
+
+	greeting "github.com/kodmm/Go-practice/try_p16"
 )
 
 func main(){
 
-	fmt.Println(greating.Do())
+	fmt.Println(greeting.Do())
 }
