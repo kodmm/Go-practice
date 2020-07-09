@@ -1,3 +1,3 @@
-func Do(){
+func Do() string {
 	return "こんにちは"
 }
