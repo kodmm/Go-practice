@@ -1,0 +1,3 @@
+func Do(){
+	return "こんにちは"
+}
