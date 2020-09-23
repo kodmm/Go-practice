@@ -1,6 +1,6 @@
 package main
 
-func swap2(n, m *int){
+func swap2(n, m *int){  //*intなのはn, mの値(10, 20)がintだから(10.5, 20.0)なら*float64になる
 	print(*n)
 	print(*m)
 	*n = *m
