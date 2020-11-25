@@ -46,9 +46,9 @@ type stringer fmt.Stringer
 func main(){
 	p := Person{
 		stringer: nil,
-		FirstName: "Takahiro"
-		LastName: "Nishijima"
-		Age: 30,
+		FirstName: "Takahiro",
+		LastName: "Nishijima",
+		Age: 30
 	}
 
 	fmt.Println(p.stringer)

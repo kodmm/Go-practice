@@ -43,8 +43,10 @@ func NewPerson(gender Gender, firstName, lastName string) Person {
 
 	if gender == Female {
 		return &female{p}
+	}else{
+		return &male{p} 
 	}
-	return &male{p} 
+	
 }
 
 func main() {
