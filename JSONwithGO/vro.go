@@ -36,16 +36,17 @@ func (p *Person) GetInfo() string {
 func main() {
 	//JSONファイル読み込み
 	bytes, err := ioutil.ReadFile("vro.json")
+	
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	fmt.Printf("%T\n", bytes)
 	//JSONデコード
 	var persons []Person
 	if err := json.Unmarshal(bytes, &persons); err != nil {
 		log.Fatal(err)
 	}
-
+	
 	//デコードしたデータを表示
 	for _, p := range persons {
 		fmt.Println(p.GetInfo())
