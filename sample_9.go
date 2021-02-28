@@ -15,4 +15,5 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "読み込みに失敗しました:", err)
 	}
+	
 }
