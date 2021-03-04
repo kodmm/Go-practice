@@ -15,7 +15,6 @@ func main() {
 	if errors.Is(err, os.ErrExist) {
 		fmt.Println(err)
 	}else {
-		
 	}
 
 	var pathError *os.PathError
